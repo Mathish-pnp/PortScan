@@ -85,8 +85,6 @@ A SYN scan sends SYN (synchronize) packets to target ports, just like the first 
 
 
 ## Command Used:
-```bash
-sudo nmap -sS 192.168.1.0/24 -oN scan-results.txt
 
 | Part             | Meaning                             |
 | ---------------- | ----------------------------------- |
@@ -94,4 +92,10 @@ sudo nmap -sS 192.168.1.0/24 -oN scan-results.txt
 | `nmap`           | Runs the Nmap tool                  |
 | `-sS`            | Tells Nmap to use SYN scan          |
 | `192.168.1.0/24` | Scans the entire local subnet       |
+
+
+```bash
+sudo nmap -sS 192.168.1.0/24 -oN scan-results.txt
+
+
 
