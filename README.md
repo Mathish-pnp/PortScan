@@ -2,7 +2,7 @@
 
 ## Tools Used:
 - Nmap
-- Wireshark (optional)
+- Wireshark
 
 ## Network Range:
 - 192.168.1.0/24
