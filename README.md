@@ -40,10 +40,13 @@ Every open port = a running service = a possible vulnerability
 
 ## Types of Port States in Nmap:
 
-open	      :Port is accepting connections
-closed	    :Port is accessible but no service is listening
-filtered	  :Port is blocked by a firewall or router
-unfiltered	:Nmap can’t determine the state
+- open	      :Port is accepting connections
+
+- closed	    :Port is accessible but no service is listening
+
+- filtered	  :Port is blocked by a firewall or router
+
+- unfiltered	:Nmap can’t determine the state
 
 ## Commonly Exploited Open Ports:
 
