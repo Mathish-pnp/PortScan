@@ -1,4 +1,4 @@
-# Task: Local Network Port Scan (Parrot OS)
+# Task: Local Network Port Scan 
 
 ## Tools Used:
 - Nmap
