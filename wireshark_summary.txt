@@ -1,0 +1,362 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    fe80::7a46:5cff:fe03:8adf ff02::16              ICMPv6   150    Multicast Listener Report Message v2
+
+Frame 1: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 3.506106066    192.168.31.226        51.11.192.50          TCP      1514   51704 → 443 [ACK] Seq=1 Ack=1 Win=1019 Len=1460 [TCP segment of a reassembled PDU]
+
+Frame 2: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits) on interface ens33, id 0
+Ethernet II, Src: IntelCor_48:f2:65 (24:41:8c:48:f2:65), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.226, Dst: 51.11.192.50
+Transmission Control Protocol, Src Port: 51704, Dst Port: 443, Seq: 1, Ack: 1, Len: 1460
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 3.506106908    192.168.31.226        51.11.192.50          TLSv1.2  4170   Application Data
+
+Frame 3: 4170 bytes on wire (33360 bits), 4170 bytes captured (33360 bits) on interface ens33, id 0
+Ethernet II, Src: IntelCor_48:f2:65 (24:41:8c:48:f2:65), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.226, Dst: 51.11.192.50
+Transmission Control Protocol, Src Port: 51704, Dst Port: 443, Seq: 1461, Ack: 1, Len: 4116
+[2 Reassembled TCP Segments (5576 bytes): #2(1460), #3(4116)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 4.313835923    fe80::7a46:5cff:fe03:8adf ff02::1               ICMPv6   150    Router Advertisement from 78:46:5c:03:8a:df
+
+Frame 4: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_01 (33:33:00:00:00:01)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::1
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 4.636788284    192.168.31.205        185.199.109.154       TLSv1.2  105    Application Data
+
+Frame 5: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.205, Dst: 185.199.109.154
+Transmission Control Protocol, Src Port: 43166, Dst Port: 443, Seq: 1, Ack: 1, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 4.688142881    185.199.109.154       192.168.31.205        TCP      66     443 → 43166 [ACK] Seq=1 Ack=40 Win=284 Len=0 TSval=3669126905 TSecr=213151204
+
+Frame 6: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 4, Src: 185.199.109.154, Dst: 192.168.31.205
+Transmission Control Protocol, Src Port: 443, Dst Port: 43166, Seq: 1, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 4.688143433    185.199.109.154       192.168.31.205        TLSv1.2  105    Application Data
+
+Frame 7: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 4, Src: 185.199.109.154, Dst: 192.168.31.205
+Transmission Control Protocol, Src Port: 443, Dst Port: 43166, Seq: 1, Ack: 40, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 4.693705460    CloudNet_03:8a:df     VMware_1e:77:24       ARP      60     Who has 192.168.31.205? Tell 192.168.31.1
+
+Frame 8: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 4.693739169    VMware_1e:77:24       CloudNet_03:8a:df     ARP      42     192.168.31.205 is at 00:0c:29:1e:77:24
+
+Frame 9: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 4.731710097    192.168.31.205        185.199.109.154       TCP      66     43166 → 443 [ACK] Seq=40 Ack=40 Win=501 Len=0 TSval=213151299 TSecr=3669126905
+
+Frame 10: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.205, Dst: 185.199.109.154
+Transmission Control Protocol, Src Port: 43166, Dst Port: 443, Seq: 40, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 5.637453480    2409:40f4:1121:460b:55e9:48db:6b92:efae 2606:50c0:8002::154   TLSv1.2  125    Application Data
+
+Frame 11: 125 bytes on wire (1000 bits), 125 bytes captured (1000 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 6, Src: 2409:40f4:1121:460b:55e9:48db:6b92:efae, Dst: 2606:50c0:8002::154
+Transmission Control Protocol, Src Port: 54892, Dst Port: 443, Seq: 1, Ack: 1, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 5.695925071    2606:50c0:8002::154   2409:40f4:1121:460b:55e9:48db:6b92:efae TLSv1.2  125    Application Data
+
+Frame 12: 125 bytes on wire (1000 bits), 125 bytes captured (1000 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 6, Src: 2606:50c0:8002::154, Dst: 2409:40f4:1121:460b:55e9:48db:6b92:efae
+Transmission Control Protocol, Src Port: 443, Dst Port: 54892, Seq: 1, Ack: 40, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 5.695925336    2606:50c0:8002::154   2409:40f4:1121:460b:55e9:48db:6b92:efae TCP      86     443 → 54892 [ACK] Seq=1 Ack=40 Win=293 Len=0 TSval=604727363 TSecr=3720370114
+
+Frame 13: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 6, Src: 2606:50c0:8002::154, Dst: 2409:40f4:1121:460b:55e9:48db:6b92:efae
+Transmission Control Protocol, Src Port: 443, Dst Port: 54892, Seq: 1, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 5.737999797    2409:40f4:1121:460b:55e9:48db:6b92:efae 2606:50c0:8002::154   TCP      86     54892 → 443 [ACK] Seq=40 Ack=40 Win=524 Len=0 TSval=3720370215 TSecr=604727363
+
+Frame 14: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 6, Src: 2409:40f4:1121:460b:55e9:48db:6b92:efae, Dst: 2606:50c0:8002::154
+Transmission Control Protocol, Src Port: 54892, Dst Port: 443, Seq: 40, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 7.577147612    192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x010f PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 15: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 8.601062188    192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0110 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 16: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 9.626308004    192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0111 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 17: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 10.774576063   fe80::7a46:5cff:fe03:8adf 2409:40f4:1121:460b:55e9:48db:6b92:efae ICMPv6   86     Neighbor Solicitation for 2409:40f4:1121:460b:55e9:48db:6b92:efae from 78:46:5c:03:8a:df
+
+Frame 18: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: 2409:40f4:1121:460b:55e9:48db:6b92:efae
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 10.774632924   2409:40f4:1121:460b:55e9:48db:6b92:efae fe80::7a46:5cff:fe03:8adf ICMPv6   78     Neighbor Advertisement 2409:40f4:1121:460b:55e9:48db:6b92:efae (sol)
+
+Frame 19: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 6, Src: 2409:40f4:1121:460b:55e9:48db:6b92:efae, Dst: fe80::7a46:5cff:fe03:8adf
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 14.638330510   192.168.31.205        140.82.112.21         TLSv1.2  105    Application Data
+
+Frame 20: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.205, Dst: 140.82.112.21
+Transmission Control Protocol, Src Port: 45586, Dst Port: 443, Seq: 1, Ack: 1, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 14.943082767   140.82.112.21         192.168.31.205        TLSv1.2  105    Application Data
+
+Frame 21: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 4, Src: 140.82.112.21, Dst: 192.168.31.205
+Transmission Control Protocol, Src Port: 443, Dst Port: 45586, Seq: 1, Ack: 40, Len: 39
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 14.943111144   192.168.31.205        140.82.112.21         TCP      66     45586 → 443 [ACK] Seq=40 Ack=40 Win=579 Len=0 TSval=316741579 TSecr=3398575508
+
+Frame 22: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.205, Dst: 140.82.112.21
+Transmission Control Protocol, Src Port: 45586, Dst Port: 443, Seq: 40, Ack: 40, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 17.920909563   fe80::7a46:5cff:fe03:8adf ff02::1               ICMPv6   150    Router Advertisement from 78:46:5c:03:8a:df
+
+Frame 23: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_01 (33:33:00:00:00:01)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::1
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 17.931832675   fe80::6af3:591c:3e4d:26bb ff02::16              ICMPv6   110    Multicast Listener Report Message v2
+
+Frame 24: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::6af3:591c:3e4d:26bb, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 17.951701214   fe80::6af3:591c:3e4d:26bb ff02::16              ICMPv6   110    Multicast Listener Report Message v2
+
+Frame 25: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::6af3:591c:3e4d:26bb, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 25.555375194   140.82.112.26         192.168.31.205        TLSv1.2  91     Application Data
+
+Frame 26: 91 bytes on wire (728 bits), 91 bytes captured (728 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 4, Src: 140.82.112.26, Dst: 192.168.31.205
+Transmission Control Protocol, Src Port: 443, Dst Port: 59056, Seq: 1, Ack: 1, Len: 25
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 25.555952247   192.168.31.205        140.82.112.26         TLSv1.2  95     Application Data
+
+Frame 27: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 4, Src: 192.168.31.205, Dst: 140.82.112.26
+Transmission Control Protocol, Src Port: 59056, Dst Port: 443, Seq: 1, Ack: 26, Len: 29
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 25.832354298   140.82.112.26         192.168.31.205        TCP      66     443 → 59056 [ACK] Seq=26 Ack=30 Win=106 Len=0 TSval=1309548452 TSecr=2898884034
+
+Frame 28: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: VMware_1e:77:24 (00:0c:29:1e:77:24)
+Internet Protocol Version 4, Src: 140.82.112.26, Dst: 192.168.31.205
+Transmission Control Protocol, Src Port: 443, Dst Port: 59056, Seq: 26, Ack: 30, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 28.740338348   2409:40f4:1121:460b:ed25:960d:d807:5741 2603:1063:27:2::14    TLSv1    2293   Client Hello
+
+Frame 29: 2293 bytes on wire (18344 bits), 2293 bytes captured (18344 bits) on interface ens33, id 0
+Ethernet II, Src: IntelCor_48:f2:65 (24:41:8c:48:f2:65), Dst: CloudNet_03:8a:df (78:46:5c:03:8a:df)
+Internet Protocol Version 6, Src: 2409:40f4:1121:460b:ed25:960d:d807:5741, Dst: 2603:1063:27:2::14
+Transmission Control Protocol, Src Port: 51709, Dst Port: 443, Seq: 1, Ack: 1, Len: 2219
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 28.980158627   fe80::7a46:5cff:fe03:8adf ff02::1               ICMPv6   150    Router Advertisement from 78:46:5c:03:8a:df
+
+Frame 30: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_01 (33:33:00:00:00:01)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::1
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 28.980159346   fe80::7a46:5cff:fe03:8adf ff02::16              ICMPv6   150    Multicast Listener Report Message v2
+
+Frame 31: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 29.184358188   fe80::7a46:5cff:fe03:8adf ff02::16              ICMPv6   150    Multicast Listener Report Message v2
+
+Frame 32: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 29.593601715   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0112 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 33: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 30.523789011   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0113 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 34: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 31.527258438   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0114 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 35: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 36.762278115   192.168.31.233        239.255.255.250       SSDP     167    M-SEARCH * HTTP/1.1 
+
+Frame 36: 167 bytes on wire (1336 bits), 167 bytes captured (1336 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 239.255.255.250
+User Datagram Protocol, Src Port: 40714, Dst Port: 1900
+Simple Service Discovery Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 43.520320874   fe80::7a46:5cff:fe03:8adf ff02::1               ICMPv6   150    Router Advertisement from 78:46:5c:03:8a:df
+
+Frame 37: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_01 (33:33:00:00:00:01)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::1
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 43.531868363   fe80::6af3:591c:3e4d:26bb ff02::16              ICMPv6   110    Multicast Listener Report Message v2
+
+Frame 38: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::6af3:591c:3e4d:26bb, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 43.921759587   fe80::6af3:591c:3e4d:26bb ff02::16              ICMPv6   110    Multicast Listener Report Message v2
+
+Frame 39: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface ens33, id 0
+Ethernet II, Src: VMware_1e:77:24 (00:0c:29:1e:77:24), Dst: IPv6mcast_16 (33:33:00:00:00:16)
+Internet Protocol Version 6, Src: fe80::6af3:591c:3e4d:26bb, Dst: ff02::16
+Internet Control Message Protocol v6
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 51.688068773   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0115 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 40: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 52.734996839   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0116 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 41: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 53.759810221   192.168.31.233        224.0.0.251           MDNS     103    Standard query 0x0117 PTR _233637DE._sub._googlecast._tcp.local, "QM" question PTR _googlecast._tcp.local, "QM" question
+
+Frame 42: 103 bytes on wire (824 bits), 103 bytes captured (824 bits) on interface ens33, id 0
+Ethernet II, Src: vivoMobi_54:53:9d (20:74:54:54:53:9d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.31.233, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 54.374132612   fe80::7a46:5cff:fe03:8adf ff02::1               ICMPv6   150    Router Advertisement from 78:46:5c:03:8a:df
+
+Frame 43: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface ens33, id 0
+Ethernet II, Src: CloudNet_03:8a:df (78:46:5c:03:8a:df), Dst: IPv6mcast_01 (33:33:00:00:00:01)
+Internet Protocol Version 6, Src: fe80::7a46:5cff:fe03:8adf, Dst: ff02::1
+Internet Control Message Protocol v6
