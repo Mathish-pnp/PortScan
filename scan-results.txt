@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Mon May 26 12:17:49 2025 as: nmap -sS -oN scan-results.txt 192.168.31.1/24
+Nmap scan report for jiofiber.local.html (192.168.31.1)
+Host is up (0.0048s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+7443/tcp open  oracleas-https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+MAC Address: 78:46:5C:03:8A:DF (Unknown)
+
+Nmap scan report for itel-S23.lan (192.168.31.130)
+Host is up (0.0058s latency).
+All 1000 scanned ports on itel-S23.lan (192.168.31.130) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 0A:8B:02:D7:DD:5E (Unknown)
+
+Nmap scan report for PM.lan (192.168.31.226)
+Host is up (0.00082s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+3306/tcp open  mysql
+MAC Address: 24:41:8C:48:F2:65 (Intel Corporate)
+
+Nmap scan report for vivo-1820.lan (192.168.31.233)
+Host is up (0.0057s latency).
+All 1000 scanned ports on vivo-1820.lan (192.168.31.233) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 20:74:54:54:53:9D (vivo Mobile Communication)
+
+Nmap scan report for parrot.lan (192.168.31.205)
+Host is up (0.000010s latency).
+All 1000 scanned ports on parrot.lan (192.168.31.205) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+# Nmap done at Mon May 26 12:18:36 2025 -- 256 IP addresses (5 hosts up) scanned in 46.96 seconds
