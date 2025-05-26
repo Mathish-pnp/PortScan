@@ -1,4 +1,4 @@
-# Task: Local Network Port Scan 
+# Local Network Port Scan 
 
 ## Tools Used:
 - Nmap
