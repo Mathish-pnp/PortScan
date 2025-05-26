@@ -70,6 +70,28 @@ You should close unused ports or filter them with iptables or ufw.
 ## Network Range:
 - 192.168.1.0/24
 
+## SYN Scan:
+
+A SYN scan sends SYN (synchronize) packets to target ports, just like the first step of a TCP handshake.
+
+   - If a port is open, the target responds with SYN-ACK
+
+   - If closed, the target replies with RST
+
+   - If filtered, there may be no response or ICMP unreachable
+
+🔒 It’s called a "stealth scan" because it doesn’t complete the handshake — so many systems don’t log it as a full connection.
+
+
+
 ## Command Used:
 ```bash
 sudo nmap -sS 192.168.1.0/24 -oN scan-results.txt
+
+| Part             | Meaning                             |
+| ---------------- | ----------------------------------- |
+| `sudo`           | Needed for low-level packet sending |
+| `nmap`           | Runs the Nmap tool                  |
+| `-sS`            | Tells Nmap to use SYN scan          |
+| `192.168.1.0/24` | Scans the entire local subnet       |
+
