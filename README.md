@@ -96,6 +96,3 @@ A SYN scan sends SYN (synchronize) packets to target ports, just like the first 
 
 ```bash
 sudo nmap -sS 192.168.1.0/24 -oN scan-results.txt
-
-
-
